@@ -10,3 +10,5 @@ download -> download current canvas as png or jpg
 3. Need to work on mobile screen size. Work on both portrait and landscape mode
 
 4. Need to be done by end of day
+
+5. Deploy code using visual studio code https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
