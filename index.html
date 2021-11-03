@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Canvas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="content-container">
+
+        <div class="main-holder">
+
+            <div class="navigation-holder">
+                <ul>
+                    <li>
+                        <button type="button" id="Line">Draw line <i class="fas fa-pencil-alt"></i></button>
+                    </li>
+                    <li>
+                        <button type="button" onclick="cicle()">Draw circle <i class="far fa-circle"></i></button>
+                    </li>
+                    <li>
+                        <button type="button">background color <i class="fas fa-fill-drip"></i>
+                            <label class="labl">
+                                <input type="color" id="colorPicker">
+                            </label>
+                        </button>
+                    </li>
+                    <li id='downloadPreview'>
+                        <button type="button" onclick="download_image()">download <i class="fas fa-save"></i></button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="canvas-holder">
+
+                <canvas width="767" height="400" id="canvas"></canvas>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/460/fabric.min.js"></script>
+
+
+    <script src="assets/js/custom.js"></script>
+
+    <script src="https://kit.fontawesome.com/c5e5090d10.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
